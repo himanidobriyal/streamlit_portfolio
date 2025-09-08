@@ -162,14 +162,22 @@ Represented university and awarded for debating and leadership.<br><br>
 """, unsafe_allow_html=True)
 
 # CONTACT FORM
+# st.markdown("<div class='section-title'>📬 Contact Me</div>", unsafe_allow_html=True)
+# with st.form("contact_form"):
+#     name = st.text_input("Name")
+#     email = st.text_input("Email")
+#     message = st.text_area("Message")
+#     submitted = st.form_submit_button("Send")
+#     if submitted:
+#         st.success("✅ Thanks, your message has been sent!")
 st.markdown("<div class='section-title'>📬 Contact Me</div>", unsafe_allow_html=True)
-with st.form("contact_form"):
-    name = st.text_input("Name")
-    email = st.text_input("Email")
-    message = st.text_area("Message")
-    submitted = st.form_submit_button("Send")
-    if submitted:
-        st.success("✅ Thanks, your message has been sent!")
+
+# Button to open Gmail Compose
+if st.button("✉️ Email Me Directly"):
+    mailto_link = "mailto:himanidobriyal8@gmail.com"
+    js = f"window.open('{mailto_link}')"
+    st.components.v1.html(f"<script>{js}</script>", height=0)
+
 
 #FOOTER
 st.markdown("""
