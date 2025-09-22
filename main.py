@@ -46,7 +46,7 @@ with col1:
     try:
         st.image("profile.png", width=220)
     except:
-        st.warning("⚠️ Add a 'profile.jpg' image to the directory to show your profile photo.")
+        st.warning(" Add a 'profile.jpg' image to the directory to show your profile photo.")
 
 with col2:
     st.markdown("<div class='main-title'>Himani Dobriyal</div>", unsafe_allow_html=True)
@@ -69,7 +69,7 @@ with open("Himani_resume.pdf", "rb") as f:
     )
 
 #  ABOUT 
-st.markdown("<div class='section-title'>👩‍💻 About Me</div>", unsafe_allow_html=True)
+st.markdown("<div class='section-title'>About Me</div>", unsafe_allow_html=True)
 st.markdown("""
 <div class='card'>
 I'm an Information Technology undergrad passionate about solving real-world problems through technology. From analyzing satellite imagery at ISRO to building full-stack platforms and clean UI web apps, I love building impactful products with scalable code and thoughtful design.
@@ -80,9 +80,9 @@ I'm an Information Technology undergrad passionate about solving real-world prob
 st.markdown("<div class='section-title'>🛠️ Skills & Tools</div>", unsafe_allow_html=True)
 st.markdown("""
 <div class='card'>
-<b>Languages:</b> C, C++, Python, JavaScript<br>
-<b>Frontend:</b> HTML5, CSS3, ReactJS, Tailwind CSS, Vite<br>
-<b>Backend:</b> NodeJS, MongoDB, REST APIs<br>
+<b>Languages:</b> C, C++, Basic Python, JavaScript<br>
+<b>Frontend:</b> HTML5, CSS3, Basic ReactJS<br>
+<b>Backend:</b> NodeJS, MongoDB<br>
 <b>Other Tools:</b> Google Earth Engine, Git, Oracle DB, VS Code<br>
 <b>Soft Skills:</b> Team Collaboration, Communication, Leadership
 </div>
@@ -106,7 +106,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 #PROJECTS
-st.markdown("<div class='section-title'>🚀 Featured Projects</div>", unsafe_allow_html=True)
+st.markdown("<div class='section-title'>Featured Projects</div>", unsafe_allow_html=True)
 
 project_data = [
     {
@@ -152,11 +152,11 @@ CGPA: 8.78<br>
 st.markdown("<div class='section-title'>🌟 Leadership & Extras</div>", unsafe_allow_html=True)
 st.markdown("""
 <div class='card'>
-<b>🌊 Core Organizer – Tech Fest (MAYUKH)</b><br>
+<b> Core Organizer – Tech Fest (MAYUKH)</b><br>
 Led and managed "Pirates of the Silicon Sea" fest — bridging tech innovation and Indian culture.<br><br>
-<b>📢 Youth Parliament – 2nd Place</b><br>
+<b> Youth Parliament – 2nd Place</b><br>
 Represented university and awarded for debating and leadership.<br><br>
-<b>🌿 NSS Volunteer</b><br>
+<b> NSS Volunteer</b><br>
 2 years of community service: plantation drives, donations, and awareness campaigns.
 </div>
 """, unsafe_allow_html=True)
